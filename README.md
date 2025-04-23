@@ -4,7 +4,7 @@ Self Avoiding Random Walk Estimation
 This Github Repository contains 5 coding files as follows:
 1. `Basic_Deterministic Method.ipynb`
  
- This file implements a **recursive backtracking algorithm** to compute the exact number \( c_L \) of self-avoiding walks (SAWs) for lengths \( L \leq 10 \). Starting from \((0,0)\), the algorithm explores all possible paths in a **depth-first manner**, avoiding self-intersections by tracking visited sites. If \( L = 0 \), it counts the walk as valid (base case). For \( L > 0 \), it checks all four possible moves (up, down, left, right), recursively continuing from valid (unvisited) positions while discarding invalid ones. This method is practical only for small \( L \).  
+ This file implements a **recursive backtracking algorithm** to compute the exact number $c_L$ of self-avoiding walks (SAWs) for lengths \( L \leq 10 \). Starting from \((0,0)\), the algorithm explores all possible paths in a **depth-first manner**, avoiding self-intersections by tracking visited sites. If \( L = 0 \), it counts the walk as valid (base case). For \( L > 0 \), it checks all four possible moves (up, down, left, right), recursively continuing from valid (unvisited) positions while discarding invalid ones. This method is practical only for small \( L \).  
  
 2. `Monte_Carlo_I.ipynb`
 
@@ -17,4 +17,4 @@ This Github Repository contains 5 coding files as follows:
 L. By avoiding the unbalance weight distributions and high rejection rates, PERM dynamically prunes low-weight walks (likely to fail) and enriches high-weight walks (likely to succeed), optimizing computational effort and reducing estimator variance.
 
 5. `MulticanonicalMC.ipynb`
-   This file implements the Multicanonical Wang-Landau method, an advanced Monte Carlo technique for estimating the growth constant \(μ \) of self-avoiding walks (SAWs) by uniformly sampling the configuration space. Inspired by Shirai & Kikuchi (2013), it addresses the challenges of rugged energy landscapes in SAWs. However, our exploration was challenged by the high demand of computational resources and fluctuating convergence of \(mu\). This method remains a potential research area that we hope to further explore.
+   This file implements the Multicanonical Wang-Landau method, an advanced Monte Carlo technique for estimating the growth constant \(μ \) of self-avoiding walks (SAWs) by uniformly sampling the configuration space. Inspired by Shirai & Kikuchi (2013), it addresses the challenges of rugged energy landscapes in SAWs. However, our exploration was challenged by the high demand of computational resources and fluctuating convergence of μ. This method remains a potential research area that we hope to further explore.
